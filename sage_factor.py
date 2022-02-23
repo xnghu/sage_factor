@@ -143,7 +143,6 @@ def lenstra(n, bound):
 def sagefactor(n):
 	
 	check, a, b, = lenstra(n,1000)
-	print(str(check) +" "+str(a)+" "+str(b) )
 	if(check=="prime"):
 		print("Government Prime: " + str(n))
 	else:
@@ -154,7 +153,6 @@ def sagefactor(n):
 		factors.append(a)
 		
 		while(True):
-			print(factors)
 			check, a, b = lenstra(b,1000)
 			
 			while(a!=2 and a%2 == 0):
